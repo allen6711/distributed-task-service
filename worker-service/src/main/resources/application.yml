@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: worker-service
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+# Worker Tunables
+worker:
+  queue: task:queue
+  delayed-queue: task:delayed
+  dead-letter-queue: task:dead-letter
+  max-attempts: 3
+  backoff-factor: 2000 # 2 seconds
