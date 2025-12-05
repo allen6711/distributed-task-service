@@ -62,7 +62,7 @@ curl -X POST http://localhost:8080/tasks \
 
 ### 2. Check Task Status
 
-# Replace {taskId} with the ID returned from the POST
+## Replace {taskId} with the ID returned from the POST
 curl http://localhost:8080/tasks/{taskId}
 
 ## Simulation Scenarios
