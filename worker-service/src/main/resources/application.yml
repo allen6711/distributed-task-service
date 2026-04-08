@@ -11,5 +11,5 @@ worker:
   queue: task:queue
   delayed-queue: task:delayed
   dead-letter-queue: task:dead-letter
-  max-attempts: 3
-  backoff-factor: 2000 # 2 seconds
+  max-attempts: 4
+  backoff-factor: 2000
