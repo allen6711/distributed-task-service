@@ -33,7 +33,7 @@ services:
     depends_on:
       - redis
     deploy:
-      replicas: 2 # Let's run 2 workers to prove concurrency!
+      replicas: 4
     networks:
       - task-net
 
