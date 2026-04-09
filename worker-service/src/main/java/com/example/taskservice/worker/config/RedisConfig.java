@@ -1,4 +1,4 @@
-package com.example.taskservice.api.config;
+package com.example.taskservice.worker.config;
 
 import com.example.taskservice.common.Task;
 import org.springframework.context.annotation.Bean;

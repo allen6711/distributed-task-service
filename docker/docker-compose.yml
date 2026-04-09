@@ -4,7 +4,7 @@ services:
   redis:
     image: redis:7-alpine
     ports:
-      - "6379:6379" # Exposed so you can inspect with redis-cli locally
+      - "6379:6379"
     networks:
       - task-net
 
@@ -29,7 +29,7 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - WORKER_MAX_ATTEMPTS=3
+      - WORKER_MAX_ATTEMPTS=4
     depends_on:
       - redis
     deploy:

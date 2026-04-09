@@ -6,7 +6,6 @@ spring:
       host: ${REDIS_HOST:localhost}
       port: ${REDIS_PORT:6379}
 
-# Worker Tunables
 worker:
   queue: task:queue
   delayed-queue: task:delayed
